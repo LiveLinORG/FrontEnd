@@ -1,0 +1,60 @@
+
+* {
+    background-color: #020515;
+    margin: 0;
+    padding: 0;
+    color: #85F061;
+    font-family: "Quicksand", monospace;
+    font-size: 1.18em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navtop {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+.navtop > div {
+    display: flex;
+    border: #829a7a solid 2px;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 0.6em;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+
+}
+.navtop > div:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    opacity: 0.8; 
+    cursor: pointer;
+}
+.navtop .logo {
+    grid-column:4 / 5;
+}
+.navtop .navInicio {
+    grid-column:6 / 7;
+}
+.navtop .navInfo {
+    grid-column:7 / 8;
+}
+
+.navtop .navUsos {
+    grid-column:8 / 9;
+}
+
+.navtop .navGallery {
+    grid-column:9 / 10;
+}
+
+.navtop .navlog {
+    grid-column:12 / 13;
+}
+
+.navtop .navregister {
+    grid-column:13/ 14;
+}
+
+
