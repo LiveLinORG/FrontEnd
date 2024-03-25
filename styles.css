@@ -24,24 +24,26 @@ body {
 }
 .navtop {
     display: grid;
+    margin-top: 12px;
     grid-template-columns: repeat(16, 1fr);
 }
 .navtop > div {
     display: flex;
-    border: #829a7a solid 2px;
-    padding: 10px 50px;
+    padding: 10px 40px;
     text-align: center;
     font-size: 0.6em;
     line-height: 1.5;
     justify-content: center;
-    align-items: center; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-
+    align-items: center;
+    border: #09145c00 solid 2px;    
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+    transition: transform 0.4s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 .navtop > div:hover {
     transform: translateY(5px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     opacity: 0.8; 
+    border: #09145c8b solid 2px;
     cursor: pointer;
 }
 .navtop .logo {
@@ -75,6 +77,94 @@ body {
 .contenedor{
     grid-area: contenedor;
     display: grid;
+    grid-template-areas: "rowleft rowmid rowright";
+}
+.rowleft{
+    grid-area: rowleft;
+}
+.rowmid{
+    grid-area: rowmid;
+}
+.landingcontainer  {
+    display: grid;
+    grid-template-areas: 
+        "landing imagen"    
+        "landing imagen"
+        "button imagen";
+}
+.rowmid .landingcontainer .landingtitle {
+    grid-area: landing;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;  
+
+}
+.titulop {
+    font-size: 2.3rem;
+    margin-left:10%; 
+    font-family: "Quicksand", monospace;
+    font-style: italic; 
+    margin-bottom: 10px;
+    line-height: 85%; 
+    display: flex;
+    align-items: left; 
+    justify-content: left;
+    max-width: 800px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    color: #85F061;
+    text-shadow: 2px 2px 2px rgba(49, 3, 6, 0.676);
+
+}
+.subtitulo {
+    margin-left:10%; 
+    font-size: 1.5rem;
+    margin-top: 10px; 
+    color: #85f061d5;
+    display: flex;
+    align-items: left; 
+    text-align: left;  
+    justify-content: left;     
+}
+.rowmid .landingcontainer .imagenlanding {
+    grid-area:imagen;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.rowmid .landingcontainer .imagenlanding .img {
+    width: 100%;
+    height: 100%; 
+}
+.rowmid .landingcontainer button {
+    grid-area: button;
+    padding: 10px 20px; 
+    background-color: #081019; 
+    color: #85F061; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1.2rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 50%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(8, 3, 3, 0.7); 
+    font-family: monospace;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+.rowmid .landingcontainer button:hover {
+    background-color: #03071E;
+    transform: translateY(-3px) scale(1.05); 
+}
+.rowright{
+    grid-area:rowright;
 }
 
 /* ------------------- FOOTER-------------------*/
@@ -126,4 +216,10 @@ body {
     .navtop .navregister {
         grid-column:5/ 6;
     }
+}
+@media screen and (max-width: 700px) {
+    .navtop {
+        font-size: 0.75em;
+        }
+
 }
