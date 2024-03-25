@@ -1,4 +1,4 @@
-
+/* General guidelines*/
 * {
     background-color: #020515;
     margin: 0;
@@ -8,12 +8,17 @@
     font-size: 1.18em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+/* Asignacion de lugares con grid*/
 body {
     display: grid;
-    grid-template-areas: "header"
-                         "contenedor"
-                         "footer";
+    grid-template-areas: 
+        "header"
+        "contenedor"
+        "footer";
+    min-height: 100vh;
+    overflow-x: hidden; 
 }
+/* ------------------- HEADER-------------------*/
 .header{
     grid-area: header;
 }
@@ -65,9 +70,64 @@ body {
     grid-column:13/ 14;
 }
 
+/* ------------------- CONTENEDOR-------------------*/
+
 .contenedor{
     grid-area: contenedor;
+    display: grid;
 }
+
+/* ------------------- FOOTER-------------------*/
+
 .footer{
     grid-area: footer;
+}
+
+/* ------------------- MEDIA QUERY-------------------*/
+
+@media screen and (max-width: 1280px) {
+    .navtop .logo,
+    .navtop .navInicio,
+    .navtop .navInfo,
+    .navtop .navUsos,
+    .navtop .navGallery,
+    .navtop .navlog,
+    .navtop .navregister {
+        max-width: 20px; /* maximo ancho de los div en el header*/
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .navtop {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr)); /* Ajusta las columnas automáticamente */
+        padding: 10px; /* Espacio interior del navbar */
+    }
+
+    /* Oculta los elementos navUsos y navGallery */
+    .navtop .navUsos,
+    .navtop .navGallery {
+        display: none;
+    }
+    .navtop .logo {
+        grid-column:1 / 2;
+    }
+    .navtop .navInicio {
+        grid-column:2 / 3;
+    }
+    .navtop .navInfo {
+        grid-column:3 /4;
+    }  
+  
+    .navtop .navlog {
+        grid-column:4 / 5;
+    }
+    
+    .navtop .navregister {
+        grid-column:5/ 6;
+    }
+
+
+
+
 }
