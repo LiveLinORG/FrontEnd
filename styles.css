@@ -8,7 +8,15 @@
     font-size: 1.18em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
-
+body {
+    display: grid;
+    grid-template-areas: "header"
+                         "contenedor"
+                         "footer";
+}
+.header{
+    grid-area: header;
+}
 .navtop {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
@@ -57,4 +65,9 @@
     grid-column:13/ 14;
 }
 
-
+.contenedor{
+    grid-area: contenedor;
+}
+.footer{
+    grid-area: footer;
+}
