@@ -1,17 +1,13 @@
-/* General guidelines*/
-/* ------------------- HEADER-------------------*/
-
 
 /* Asignacion de lugares con grid*/
 body {
     display: grid;
-    grid-template-areas:"header" "contenedor" "footer";
-    overflow-x: hidden; 
+    grid-template-areas: 
+        "header"
+        "contenedor"
+        "footer";
     min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    grid-template-columns: repeat(1,100%);    
-    grid-template-rows: 20vh;
+    overflow-x: hidden; 
     background-color: #020515;
     margin: 0;
     padding: 0;
@@ -20,17 +16,15 @@ body {
     font-size: 1.18em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
+/* ------------------- HEADER-------------------*/
 .header{
     grid-area: header;
-    margin-top: 10px;
-    font-size: 1.7em;
-
 }
 .navtop {
     display: grid;
     margin-top: 12px;
     grid-template-columns: repeat(16, 1fr);
-    height: 20px;
+    font-size: 1.7em;
 }
 .navtop > div {
     display: flex;
@@ -192,7 +186,7 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin-bottom: 23%;
+    margin-bottom: 5%;
 }
 .rowmid .landingcontainer button:hover {
     background-color: #03071E;
@@ -204,13 +198,10 @@ body {
 
 /* ------------------- FOOTER-------------------*/
 
-.footer {
+.footerelements{
     grid-area: footer;
 }
-/* Define el área de los elementos dentro del footer */
-.footerelements {
-    grid-area: elemento2;
-}
+
 /* ------------------- MEDIA QUERY-------------------*/
 
 @media screen and (max-width: 1280px) {
