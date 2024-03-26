@@ -200,6 +200,13 @@ body {
 
 .footerelements{
     grid-area: footer;
+    width: 100%;
+    background-color: #33333316; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 10px 0; /* Espaciado interno */
+    bottom: 0;
+    position: fixed;
 }
 
 /* ------------------- MEDIA QUERY-------------------*/
