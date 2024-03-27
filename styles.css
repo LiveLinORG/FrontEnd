@@ -207,44 +207,66 @@ body {
 
 .note-live-card {
     border-radius: 10px;
-    padding: 20px;
+    padding: 2rem; /* Utilizando rem para el padding */
     transition: transform 0.3s;
-    opacity: 0.9; /* Ajusta la opacidad según tu preferencia */
+    opacity: 0.9;
 }
 
 .note-live-card:hover {
     transform: scale(1.05);
-    opacity: 1; /* Restaura la opacidad al pasar el mouse */
+    opacity: 1;
 }
 
-.note-live-card h2, .note-live-card h3 {
-    margin-bottom: 10px;
+.note-live-card h2,
+.note-live-card h3 {
+    margin-bottom: 1rem; /* Utilizando rem para el margen */
+    font-size: 1.2rem; /* Utilizando rem para el tamaño de fuente */
 }
 
 .large {
     grid-column: span 2;
 }
 
-.medium {
-    grid-column: span 1;
-}
-
+.medium,
 .small {
     grid-column: span 1;
 }
 
-.note-live-card:nth-child(odd) {
-    background-color: rgba(61, 48, 58, 0.9); /* Agrega transparencia al color de fondo */
-    color: rgba(138, 205, 234, 0.9); /* Agrega transparencia al color del texto */
-}
+/* Consulta de medios para pantallas de hasta 800px (tablets, celulares en horizontal) */
+@media screen and (max-width: 1050px) {
+    .note-live-container {
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); /* Ajustando el ancho mínimo de las tarjetas */
+        gap: 2em; /* Utilizando em para el espacio entre tarjetas */
+        max-width: 100%; /* Ajustando el ancho máximo del contenedor */
+    }
+    .rowmid .landingcontainer button {
+        transform: translate(50%, 250%);
+    }
+    
+    .note-live-card {
+        padding: 2em; /* Utilizando em para el padding */
+        max-width: 100%; /* Ajustando el ancho máximo de las tarjetas */
+        box-sizing: border-box; /* Manteniendo el ancho total dentro del padding y el borde */
+    }
 
-.note-live-card:nth-child(even) {
-    background-color: rgba(133, 217, 228, 0.9); /* Agrega transparencia al color de fondo */
-    color: rgba(37, 38, 40, 0.9); /* Agrega transparencia al color del texto */
-}
+    .note-live-container {
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr)); /* Ajustando el ancho mínimo de las tarjetas */
+        gap: 1em; /* Utilizando em para el espacio entre tarjetas */
+    }
 
-.inverse-color {
-    filter: brightness(0.1) invert(1) !important;
+    .note-live-container {
+        grid-template-columns: 1fr;
+        gap: 1em; /* Utilizando em para el espacio entre tarjetas */
+    }
+
+    .note-live-card {
+        padding: 1em; /* Utilizando em para el padding */
+    }
+
+    .note-live-card h2,
+    .note-live-card h3 {
+        font-size: 1.1em; /* Utilizando em para el tamaño de fuente */
+    }
 }
 
 
