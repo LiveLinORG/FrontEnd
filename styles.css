@@ -1,13 +1,4 @@
-/* General guidelines*/
-* {
-    background-color: #020515;
-    margin: 0;
-    padding: 0;
-    color: #85F061;
-    font-family: "Quicksand", monospace;
-    font-size: 1.18em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
+
 /* Asignacion de lugares con grid*/
 body {
     display: grid;
@@ -17,15 +8,24 @@ body {
         "footer";
     min-height: 100vh;
     overflow-x: hidden; 
+    background-color: #020515;
+    margin: 0;
+    padding: 0;
+    color: #85F061;
+    font-family: "Quicksand", monospace;
+    font-size: 1.18em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 /* ------------------- HEADER-------------------*/
 .header{
     grid-area: header;
+    margin-bottom: 40px;
 }
 .navtop {
     display: grid;
     margin-top: 12px;
     grid-template-columns: repeat(16, 1fr);
+    font-size: 1.7em;
 }
 .navtop > div {
     display: flex;
@@ -77,13 +77,12 @@ body {
 .contenedor{
     grid-area: contenedor;
     display: grid;
-    grid-template-areas: "rowleft rowmid rowright";
-}
-.rowleft{
-    grid-area: rowleft;
+    grid-template-areas: "rowmid" "rowcenter";
+    grid-gap: 40px;
 }
 .rowmid{
     grid-area: rowmid;
+    margin-bottom: 2%;
 }
 .landingcontainer  {
     display: grid;
@@ -102,11 +101,10 @@ body {
 
 }
 .titulop {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     margin-left:10%; 
     font-family: "Quicksand", monospace;
     font-style: italic; 
-    margin-bottom: 10px;
     line-height: 85%; 
     display: flex;
     align-items: left; 
@@ -116,12 +114,12 @@ body {
     text-transform: uppercase;
     color: #85F061;
     text-shadow: 2px 2px 2px rgba(49, 3, 6, 0.676);
+    height: 100%;
 
 }
 .subtitulo {
     margin-left:10%; 
-    font-size: 1.5rem;
-    margin-top: 10px; 
+    font-size: 1.6rem;
     color: #85f061d5;
     display: flex;
     align-items: left; 
@@ -175,10 +173,10 @@ body {
     color: #85F061; 
     border: none; 
     border-radius: 5px; 
-    font-size: 1.2rem; 
+    font-size: 1.4rem; 
     cursor: pointer; 
     transition: background-color 0.3s ease;   
-    width: 50%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 10px rgba(8, 3, 3, 0.7); 
@@ -187,20 +185,102 @@ body {
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin-bottom: 5%;
+    height: 25%;
+    margin-bottom: 20%;
 }
 .rowmid .landingcontainer button:hover {
     background-color: #03071E;
     transform: translateY(-3px) scale(1.05); 
 }
-.rowright{
-    grid-area:rowright;
+/* ------------------- ROWCENTER-------------------*/
+.main-container {
+    grid-area: rowcenter;
 }
+
+.note-live-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.note-live-card {
+    border-radius: 10px;
+    padding: 2rem; /* Utilizando rem para el padding */
+    transition: transform 0.3s;
+    opacity: 0.9;
+}
+
+.note-live-card:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.note-live-card h2,
+.note-live-card h3 {
+    margin-bottom: 1rem; /* Utilizando rem para el margen */
+    font-size: 1.2rem; /* Utilizando rem para el tamaño de fuente */
+}
+
+.large {
+    grid-column: span 2;
+}
+
+.medium,
+.small {
+    grid-column: span 1;
+}
+
+/* Consulta de medios para pantallas de hasta 800px (tablets, celulares en horizontal) */
+@media screen and (max-width: 1050px) {
+    .note-live-container {
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr)); /* Ajustando el ancho mínimo de las tarjetas */
+        gap: 2em; /* Utilizando em para el espacio entre tarjetas */
+        max-width: 100%; /* Ajustando el ancho máximo del contenedor */
+    }
+    .rowmid .landingcontainer button {
+        transform: translate(50%, 250%);
+    }
+    
+    .note-live-card {
+        padding: 2em; /* Utilizando em para el padding */
+        max-width: 100%; /* Ajustando el ancho máximo de las tarjetas */
+        box-sizing: border-box; /* Manteniendo el ancho total dentro del padding y el borde */
+    }
+
+    .note-live-container {
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr)); /* Ajustando el ancho mínimo de las tarjetas */
+        gap: 1em; /* Utilizando em para el espacio entre tarjetas */
+    }
+
+    .note-live-container {
+        grid-template-columns: 1fr;
+        gap: 1em; /* Utilizando em para el espacio entre tarjetas */
+    }
+
+    .note-live-card {
+        padding: 1em; /* Utilizando em para el padding */
+    }
+
+    .note-live-card h2,
+    .note-live-card h3 {
+        font-size: 1.1em; /* Utilizando em para el tamaño de fuente */
+    }
+}
+
 
 /* ------------------- FOOTER-------------------*/
 
-.footer{
+.footerelements{
     grid-area: footer;
+    width: 100%;
+    background-color: #33333316; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    padding: 10px 0; /* Espaciado interno */
+    bottom: 0;
+    position: fixed;
 }
 
 /* ------------------- MEDIA QUERY-------------------*/
