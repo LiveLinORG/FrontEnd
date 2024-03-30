@@ -36,39 +36,3 @@ function rotateImages() {
 setTimeout(rotateImages, 0); 
 setInterval(rotateImages, 3000);
 
-document.addEventListener("DOMContentLoaded", function() {
-    const cards = document.querySelectorAll('.note-live-card');
-    const originalColors = [];
-
-    // Almacena los colores originales al cargar la página
-    cards.forEach(card => {
-        const originalColor = {
-            backgroundColor: getComputedStyle(card).getPropertyValue('background-color').trim(),
-            color: getComputedStyle(card).getPropertyValue('color').trim()
-        };
-        originalColors.push(originalColor);
-    });
-
-    // Función para restaurar los colores originales de todas las tarjetas
-    function restoreOriginalColors() {
-        cards.forEach((card, index) => {
-            card.style.backgroundColor = originalColors[index].backgroundColor;
-            card.style.color = originalColors[index].color;
-        });
-    }
-
-    // Evento mouseenter
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            cards.forEach((otherCard, index) => {
-                otherCard.style.backgroundColor = originalColors[index].color;
-                otherCard.style.color = originalColors[index].backgroundColor;
-            });
-        });
-
-        card.addEventListener('mouseleave', () => {
-            restoreOriginalColors();
-        });
-    });
-});
-

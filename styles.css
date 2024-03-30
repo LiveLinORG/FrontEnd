@@ -192,7 +192,7 @@ body {
     background-color: #03071E;
     transform: translateY(-3px) scale(1.05); 
 }
-/* ------------------- ROWCENTER-------------------*/
+/* ------------------- ROWCENTER------------------------------------------------------*/
 .main-container {
     grid-area: rowcenter;
 }
@@ -209,12 +209,14 @@ body {
     border-radius: 10px;
     padding: 2rem; /* Utilizando rem para el padding */
     transition: transform 0.3s;
-    opacity: 0.9;
+    opacity: 1;
+    border: 0.1px solid #cccccc1d; /* Borde gris claro */
+
 }
 
 .note-live-card:hover {
     transform: scale(1.05);
-    opacity: 1;
+    opacity: 2;
 }
 
 .note-live-card h2,
@@ -231,6 +233,24 @@ body {
 .small {
     grid-column: span 1;
 }
+/* Estilos para las tarjetas grandes (large) con color claro */
+.note-live-container .note-live-card.large {
+    background-color: #55e309f7; /* Color claro relacionado con #020515 */
+    color: #020515; /* Color de texto claro para mayor legibilidad */
+}
+
+/* Estilos para las tarjetas medianas (medium) con color oscuro */
+.note-live-container .note-live-card.medium {
+    background-color: #030a2d; /* Color oscuro relacionado con #020515 */
+    color: #85f061; /* Color de texto claro para mayor legibilidad */
+}
+
+/* Estilos para las tarjetas pequeñas (small) con color claro */
+.note-live-container .note-live-card.small {
+    background-color: #0C1D0D; /* Color claro relacionado con #020515 */
+    color: #FFF; /* Color de texto claro para mayor legibilidad */
+}
+
 
 /* Consulta de medios para pantallas de hasta 800px (tablets, celulares en horizontal) */
 @media screen and (max-width: 1050px) {
