@@ -79,6 +79,8 @@ body {
     display: grid;
     grid-template-areas: "rowmid" "rowcenter";
     grid-gap: 40px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .rowmid{
     grid-area: rowmid;
@@ -187,7 +189,8 @@ body {
     justify-content: center; 
     align-items: center;
     height: 45%;
-    margin-bottom: 10%;
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
 .rowmid .landingcontainer button:hover {
     background-color: #03071E;
@@ -291,6 +294,8 @@ body {
 }
 
 .additional-features {
+    margin-right: 5%;
+    margin-left: 5%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
