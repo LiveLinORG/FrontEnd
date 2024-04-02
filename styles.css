@@ -290,6 +290,139 @@ body {
     }
 }
 
+.additional-features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .plan {
+    flex: 1 1 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .plan h3 {
+    margin-top: 0;
+  }
+  
+  .plan ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .plan ul li {
+    margin-bottom: 10px;
+  }
+  
+  .plan-gratuito {
+    background-color: #ffd31d;
+  }
+  
+  .plan-premium {
+    background-color: #6c5ce7;
+  }
+  
+  .plan-empresarial {
+    background-color: #00b894;
+  }
+  
+  .plan-gratuito h3 {
+    color: #ff7f0e;
+  }
+  
+  .plan-premium h3 {
+    color: #ffffff;
+  }
+  
+  .plan-empresarial h3 {
+    color: #ffffff;
+  }
+  
+
+
+/* Estilos para Testimonios de Usuarios */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+}
+
+.testimonials .testimonial {
+    background-color: #3498DB; /* Color de caja diferente */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.testimonials .testimonial:hover {
+    transform: translateY(-5px);
+    background-color: #2ECC71; /* Cambio de color al hacer hover */
+}
+
+.testimonials .testimonial p {
+    font-style: italic;
+}
+
+/* Estilos para Recursos Educativos */
+.educational-resources {
+    background-color: #FF9F1C; /* Color de caja diferente */
+    color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.educational-resources p {
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para Soporte y Contacto */
+.support-contact {
+    background-color: #2ECC71; /* Color de caja diferente */
+    color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.support-contact p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para Integraciones y Compatibilidad */
+.integrations {
+    background-color: #3498DB; /* Color de caja diferente */
+    color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.integrations p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para Actualizaciones y Novedades */
+.updates-news {
+    background-color: #6C5B7B; /* Color de caja diferente */
+    color: #fff;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.updates-news p {
+    margin-bottom: 10px;
+}
+
+
+
 
 /* ------------------- FOOTER-------------------*/
 
