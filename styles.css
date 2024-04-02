@@ -8,13 +8,12 @@ body {
         "footer";
     min-height: 100vh;
     overflow-x: hidden; 
-    background-color: #020515;
+    background-color: #ffe8d6;
     margin: 0;
     padding: 0;
-    color: #85F061;
-    font-family: "Quicksand", monospace;
+    color: #000000;
+    font-family: "Roboto", monospace;
     font-size: 1.18em;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 /* ------------------- HEADER-------------------*/
 .header{
