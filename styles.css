@@ -350,8 +350,8 @@ body {
 }
 
 .testimonials .testimonial {
-    background-color: #3498DB; /* Color de caja diferente */
-    color: #fff;
+    background-color: #eafff1; /* Color de caja diferente */
+    color: #403d39;
     padding: 20px;
     border-radius: 10px;
     width: calc(33.33% - 20px);
@@ -361,7 +361,7 @@ body {
 
 .testimonials .testimonial:hover {
     transform: translateY(-5px);
-    background-color: #2ECC71; /* Cambio de color al hacer hover */
+    background-color: #a6f6c3; /* Cambio de color al hacer hover */
 }
 
 .testimonials .testimonial p {
