@@ -77,8 +77,6 @@ body {
     display: grid;
     grid-template-areas: "rowmid" "rowcenter";
     grid-gap: 40px;
-    margin-right: 5%;
-    margin-left: 5%;
 }
 .rowmid{
     grid-area: rowmid;
@@ -104,8 +102,8 @@ body {
     font-size: 2.6rem;
     margin-top: 25px;
     margin-left:10%; 
-    font-family: "Quicksand", monospace;
-    font-style: italic; 
+    font-family: "Roboto", monospace;
+    font-style: normal; 
     line-height: 85%; 
     display: flex;
     align-items: left; 
@@ -113,15 +111,14 @@ body {
     max-width: 800px;
     font-weight: bold; 
     text-transform: uppercase;
-    color: #85F061;
-    text-shadow: 2px 2px 2px rgba(49, 3, 6, 0.676);
+    color: #000000;
     height: 100%;
 
 }
 .subtitulo {
     margin-left:10%; 
     font-size: 1.6rem;
-    color: #85f061d5;
+    color: #403d39;
     display: flex;
     align-items: left; 
     text-align: left;  
