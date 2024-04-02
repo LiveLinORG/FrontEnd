@@ -232,19 +232,19 @@ body {
 }
 /* Estilos para las tarjetas grandes (large) con color claro */
 .note-live-container .note-live-card.large {
-    background-color: #55e309f7; /* Color claro relacionado con #020515 */
-    color: #020515; /* Color de texto claro para mayor legibilidad */
+    background-color: #f7a072; /* Color claro relacionado con #020515 */
+    color: #000000; /* Color de texto claro para mayor legibilidad */
 }
 
 /* Estilos para las tarjetas medianas (medium) con color oscuro */
 .note-live-container .note-live-card.medium {
-    background-color: #030a2d; /* Color oscuro relacionado con #020515 */
-    color: #85f061; /* Color de texto claro para mayor legibilidad */
+    background-color: #FDE49C; /* Color oscuro relacionado con #020515 */
+    color: #000000; /* Color de texto claro para mayor legibilidad */
 }
 
 /* Estilos para las tarjetas pequeñas (small) con color claro */
 .note-live-container .note-live-card.small {
-    background-color: #0C1D0D; /* Color claro relacionado con #020515 */
+    background-color: #FFB740; /* Color claro relacionado con #020515 */
     color: #FFF; /* Color de texto claro para mayor legibilidad */
 }
 
