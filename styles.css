@@ -34,9 +34,8 @@ body {
     line-height: 1.5;
     justify-content: center;
     align-items: center;
-    border: #09145c00 solid 2px;    
+    background-color: #ffd8ba;  
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
     transition: transform 0.4s ease, box-shadow 0.3s ease, opacity 0.3s ease;
 }
 .navtop > div:hover {
