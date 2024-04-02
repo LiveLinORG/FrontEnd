@@ -287,8 +287,6 @@ body {
 }
 
 .additional-features {
-    margin-right: 5%;
-    margin-left: 5%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -317,15 +315,15 @@ body {
   }
   
   .plan-gratuito {
-    background-color: #ffd31d;
+    background-color: #f6ddbe;
   }
   
   .plan-premium {
-    background-color: #6c5ce7;
+    background-color: #f7c991;
   }
   
   .plan-empresarial {
-    background-color: #00b894;
+    background-color: #faba6d;
   }
   
   .plan-gratuito h3 {
