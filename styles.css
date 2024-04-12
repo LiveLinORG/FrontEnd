@@ -464,7 +464,7 @@ body {
 
 /* Estilos para Recursos Educativos */
 .educational-resources {
-    background-image: linear-gradient(to bottom, #eafff1, #d6a440); /* Desvanecido de crema a color de caja */
+    background-image: linear-gradient(to bottom, #f0ce9c, #a57c29); /* Desvanecido de crema a color de caja */
     color: #fff;
     padding: 50px;
     /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);*/
