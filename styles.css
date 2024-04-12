@@ -377,26 +377,83 @@ body {
 
 
 /* Estilos para Testimonios de Usuarios */
-.testimonials {
+.testimonioti{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 50px;
+    justify-content: left;
 }
+.testimonioti2{
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
 
-.testimonials .testimonial {
-    background-color: #eafff1; /* Color de caja diferente */
+}
+.testimonials {
+    display: grid;
+    padding: 50px;
+    grid-gap: 60px;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin-right: auto;
+    margin-left: auto;
+    grid-template-areas:"testimonial1 testimonial2"
+                        "testimonial1 testimonial3"
+                        "testimonial4 testimonial4";
+
+}
+.testimonials .testimonial1{
+    grid-area: testimonial1;
+    font-size: 1.5em;  
+    text-align: center;  
+    display: flex;
+    align-items: center;
+}
+.testimonials .testimonial1 .p{
+    text-align: center; 
+    grid-area: testimonial1;
+    font-size: 1.5em;   
+    
+}
+.testimonials .testimonial2{
+    grid-area: testimonial2;
+    font-size: 1.3rem;
+    text-align: center;  
+    display: flex;
+    align-items: center;
+}
+.testimonials .testimonial3{
+    grid-area: testimonial3;
+    font-size: 1.3rem;
+    text-align: center;  
+    display: flex;
+    align-items: center;
+}
+.testimonials .testimonial4{
+    grid-area: testimonial4;
+    font-size: 1.4rem;
+    text-align: center;  
+    display: flex;
+    align-items: center;
+}
+.testimonials .testimonial1,
+.testimonials .testimonial2,
+.testimonials .testimonial3,
+.testimonials .testimonial4 {
+    background-color: #eafff1;
     color: #403d39;
     padding: 20px;
     border-radius: 10px;
-    width: calc(33.33% - 20px);
+    width: 100%;
+    height: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-
 }
 
-.testimonials .testimonial:hover {
+
+.testimonials .testimonial1:hover,
+.testimonials .testimonial2:hover,
+.testimonials .testimonial3:hover,
+.testimonials .testimonial4:hover {
     transform: translateY(-5px);
     background-color: #a6f6c3; /* Cambio de color al hacer hover */
 }
