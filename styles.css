@@ -219,7 +219,7 @@ body {
 .note-live-card h2,
 .note-live-card h3 {
     margin-bottom: 1rem; /* Utilizando rem para el margen */
-    font-size: 1.2rem; /* Utilizando rem para el tamaño de fuente */
+    font-size: 1.2rem; 
 }
 
 .large {
