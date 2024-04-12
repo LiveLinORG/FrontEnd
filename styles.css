@@ -299,6 +299,11 @@ body {
     padding: 20px;
     border-radius: 8px;
     background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .plan:hover {
+    transform: translateY(-10px);
   }
   
   .plan h3 {
@@ -318,12 +323,24 @@ body {
     background-color: #f6ddbe;
   }
   
+  .plan-gratuito:hover {
+    background-color: #f8e2c8;
+  }
+  
   .plan-premium {
     background-color: #f7c991;
   }
   
+  .plan-premium:hover {
+    background-color: #fad4a5;
+  }
+  
   .plan-empresarial {
     background-color: #faba6d;
+  }
+  
+  .plan-empresarial:hover {
+    background-color: #fbc684;
   }
   
   .plan-gratuito h3 {
