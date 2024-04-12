@@ -464,7 +464,7 @@ body {
 
 /* Estilos para Recursos Educativos */
 .educational-resources {
-    background-image: linear-gradient(to bottom, #f0ce9c, #a57c29); /* Desvanecido de crema a color de caja */
+    background-image: linear-gradient(to bottom, #e7c899, #a57c29); /* Desvanecido de crema a color de caja */
     color: #fff;
     padding: 50px;
     /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);*/
@@ -492,7 +492,7 @@ body {
 /* Estilos para Integraciones y Compatibilidad */
 .integrations {
     background-color: #3498DB; /* Color de caja diferente */
-    background-image: linear-gradient(to bottom, #7eb6db, #3498DB); /* Desvanecido de crema a color de caja */
+    background-image: linear-gradient(to bottom, #78737c, #6C5B7B); /* Desvanecido de crema a color de caja */
 
     color: #fff;
     padding: 50px;
@@ -506,6 +506,7 @@ body {
 /* Estilos para Actualizaciones y Novedades */
 .updates-news {
     background-color: #6C5B7B; /* Color de caja diferente */
+    background-image: linear-gradient(to bottom, #7eb6db, #3498DB); /* Desvanecido de crema a color de caja */
     color: #fff;
     padding: 50px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
