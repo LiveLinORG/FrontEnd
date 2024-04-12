@@ -492,6 +492,8 @@ body {
 /* Estilos para Integraciones y Compatibilidad */
 .integrations {
     background-color: #3498DB; /* Color de caja diferente */
+    background-image: linear-gradient(to bottom, #7eb6db, #3498DB); /* Desvanecido de crema a color de caja */
+
     color: #fff;
     padding: 50px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
