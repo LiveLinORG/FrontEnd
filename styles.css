@@ -234,20 +234,27 @@ body {
 }
 /* Estilos para las tarjetas grandes (large) con color claro */
 .note-live-container .note-live-card.large {
-    background-color: #f7a072; /* Color claro relacionado con #020515 */
+    /* Color claro relacionado con #020515 */
     color: #000000; /* Color de texto claro para mayor legibilidad */
+    background-image: linear-gradient(to top, #eef3bd, #f7a072); /* Desvanecido de crema a color de caja */
+    border: 2px solid black; /* Borde negro de 2px */
+
 }
 
 /* Estilos para las tarjetas medianas (medium) con color oscuro */
 .note-live-container .note-live-card.medium {
-    background-color: #FDE49C; /* Color oscuro relacionado con #020515 */
+    background-image: linear-gradient(to top, #eef3bd, #f7a072); /* Desvanecido de crema a color de caja */
     color: #000000; /* Color de texto claro para mayor legibilidad */
+    border: 2px solid black; /* Borde negro de 2px */
+
 }
 
 /* Estilos para las tarjetas pequeñas (small) con color claro */
 .note-live-container .note-live-card.small {
-    background-color: #FFB740; /* Color claro relacionado con #020515 */
-    color: #FFF; /* Color de texto claro para mayor legibilidad */
+    background-image: linear-gradient(to top, #eef3bd, #f7a072); /* Desvanecido de crema a color de caja */
+    color: #000000; /* Color de texto claro para mayor legibilidad */
+    border: 2px solid black; /* Borde negro de 2px */
+
 }
 
 
@@ -322,15 +329,20 @@ body {
   }
   
   .plan-gratuito {
-    background-color: #f6ddbe;
+    background-color: #e6d3bc;
+    border: 2px solid #666665; /* Borde negro de 2px */
+
   }
   
   .plan-gratuito:hover {
     background-color: #f8e2c8;
+    
   }
   
   .plan-premium {
-    background-color: #f7c991;
+    background-color: #e6d3bc;
+    border: 2px solid #a38f1a; /* Borde negro de 2px */
+
   }
   
   .plan-premium:hover {
@@ -338,7 +350,9 @@ body {
   }
   
   .plan-empresarial {
-    background-color: #faba6d;
+    background-color: #e6d3bc;
+    border: 2px solid #071a22; /* Borde negro de 2px */
+
   }
   
   .plan-empresarial:hover {
@@ -346,15 +360,15 @@ body {
   }
   
   .plan-gratuito h3 {
-    color: #ff7f0e;
+    color: #666665;
   }
   
   .plan-premium h3 {
-    color: #ffffff;
+    color: #a38f1a;
   }
   
   .plan-empresarial h3 {
-    color: #ffffff;
+    color: #071a22;
   }
   
 
@@ -376,7 +390,6 @@ body {
     width: calc(33.33% - 20px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
-    background-image: linear-gradient(to top, #eafff1, #d6a440); /* Desvanecido de crema a color de caja */
 
 }
 
