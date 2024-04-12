@@ -376,6 +376,8 @@ body {
     width: calc(33.33% - 20px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    background-image: linear-gradient(to top, #eafff1, #d6a440); /* Desvanecido de crema a color de caja */
+
 }
 
 .testimonials .testimonial:hover {
@@ -389,10 +391,10 @@ body {
 
 /* Estilos para Recursos Educativos */
 .educational-resources {
-    background-color: #FF9F1C; /* Color de caja diferente */
+    background-image: linear-gradient(to bottom, #eafff1, #d6a440); /* Desvanecido de crema a color de caja */
     color: #fff;
     padding: 50px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);*/
 }
 
 .educational-resources p {
@@ -402,7 +404,7 @@ body {
 
 /* Estilos para Soporte y Contacto */
 .support-contact {
-    background-color: #2ECC71; /* Color de caja diferente */
+    background-color: #5baf7e; /* Color de caja diferente */
     color: #fff;
     padding: 50px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
