@@ -336,7 +336,8 @@ body {
   
   .plan-gratuito:hover {
     background-color: #f8e2c8;
-    
+    background-image: linear-gradient(to top, #c5c5c4, #807e7e); /* Desvanecido de crema a color de caja */
+
   }
   
   .plan-premium {
@@ -347,6 +348,8 @@ body {
   
   .plan-premium:hover {
     background-color: #fad4a5;
+    background-image: linear-gradient(to top, #fad4a5, #a59c69); /* Desvanecido de crema a color de caja */
+
   }
   
   .plan-empresarial {
@@ -356,7 +359,7 @@ body {
   }
   
   .plan-empresarial:hover {
-    background-color: #fbc684;
+    background-image: linear-gradient(to top, #9aadbe, #436675); /* Desvanecido de crema a color de caja */
   }
   
   .plan-gratuito h3 {
