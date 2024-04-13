@@ -1,3 +1,4 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 /* Asignacion de lugares con grid*/
 body {
@@ -526,14 +527,27 @@ body {
 .footerelements{
     grid-area: footer;
     width: 100%;
-    background-color: #33333316; /* Color de fondo del footer */
+    background-color: #33333316; 
     color: #fff; /* Color del texto */
     text-align: center;
     padding: 10px 0; /* Espaciado interno */
     bottom: 0;
     position: fixed;
 }
+.redes-sociales {
+    margin-top: 10px; 
+}
 
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px; /* Espacio entre iconos, ajusta según sea necesario */
+    color: #333; /* Color de los iconos */
+    font-size: 24px; /* Tamaño de los iconos, ajusta según sea necesario */
+}
+
+.redes-sociales a:hover {
+    color: #007bff; /* Cambia el color al pasar el ratón sobre los iconos */
+}
 /* ------------------- MEDIA QUERY-------------------*/
 
 @media screen and (max-width: 1280px) {
