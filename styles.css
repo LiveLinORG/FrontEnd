@@ -528,9 +528,9 @@ body {
     grid-area: footer;
     width: 100%;
     background-color: #33333316; 
-    color: #fff; /* Color del texto */
+    color: #fff; 
     text-align: center;
-    padding: 10px 0; /* Espaciado interno */
+    padding: 10px 0; 
     bottom: 0;
     position: fixed;
 }
@@ -540,13 +540,13 @@ body {
 
 .redes-sociales a {
     display: inline-block;
-    margin-right: 10px; /* Espacio entre iconos, ajusta según sea necesario */
-    color: #333; /* Color de los iconos */
-    font-size: 24px; /* Tamaño de los iconos, ajusta según sea necesario */
+    margin-right: 10px; 
+    color: #333; 
+    font-size: 24px; 
 }
 
 .redes-sociales a:hover {
-    color: #007bff; /* Cambia el color al pasar el ratón sobre los iconos */
+    color: #007bff; 
 }
 /* ------------------- MEDIA QUERY-------------------*/
 
